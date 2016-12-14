@@ -1,6 +1,7 @@
 <?php
 use yii\widgets\Breadcrumbs;
 use dmstr\widgets\Alert;
+use yii\helpers\Html;
 
 ?>
 <div class="content-wrapper">
@@ -37,10 +38,9 @@ use dmstr\widgets\Alert;
 
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-        <b>Version</b> 2.0
+        <b>Version</b> <?= Html::encode(Yii::$app->version)?>
     </div>
-    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <strong>Copyright &copy; 2015-<?= Html::encode(date('Y'))?> <a href="#"><?= Html::encode(Yii::$app->name)?>&nbsp;</a>.</strong> All rights reserved.
 </footer>
 
 <!-- Control Sidebar -->
