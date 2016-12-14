@@ -22,14 +22,14 @@ return [
     'as access' => [
         'class' => 'mdm\admin\components\AccessControl',
         'allowActions' => [
-            //这里是允许访问的action
+            // 这里是允许访问的action
             'site/*',
             // * 表示允许所有，后期会介绍这个
             //'*',
         ]
     ],
     'components' => [
-        //设置主题
+        // 设置主题
         'view' => [
             'theme' => [
                 'basePath' => '@app/themes/default',

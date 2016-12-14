@@ -12,7 +12,19 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
-        //设置主题
+        // language 语言包
+        'i18n' => [
+            'translations' => [
+                '*' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    //'basePath' => '@app/messages',
+                    'fileMap' => [
+                        'common' => 'common.php',
+                    ],
+                ]
+            ],
+        ],
+        // 设置主题
         'view' => [
             'theme' => [
                 'basePath' => '@app/themes/default',
